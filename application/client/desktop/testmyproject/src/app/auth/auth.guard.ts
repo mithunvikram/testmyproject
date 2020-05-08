@@ -397,6 +397,18 @@ if(this.routeName === 'login') {
          return true;
      }
       
+if(this.routeName === 'home') {
+         return true;
+     }
+      
+if(this.routeName === 'logout') {
+         return true;
+     }
+      
+if(this.routeName === 'login') {
+         return true;
+     }
+      
       
       if (this.routeName === 'admin') {
           if (this.viewPermission !== 'true') {
