@@ -5,7 +5,7 @@ import { BroadcastService } from '../auth/broadcast.service';
 import { Router } from '@angular/router';
 
 
-
+declare var $: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -36,7 +36,24 @@ public broadcastService: BroadcastService
 }
 
   ngOnInit() {
-    
+    const el = document.querySelector('#nav-toggle');
+      const closeIcon = document.querySelector('#closeIcon');
+      if (closeIcon && el) {
+        closeIcon.addEventListener('click', function() {
+          document.getElementById('nav-toggle').click();
+        });
+      }
+      if (el) {
+        el.addEventListener('click', function() {
+          this.classList.toggle('active');
+          this.classList.toggle('change');
+          $('#sidebar, #content').toggleClass('active');
+          $('.collapse.in').toggleClass('in');
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+        this.isAdminUser = false;
+        this.userId = sessionStorage.getItem('Id');
+      };
   }
 
      
