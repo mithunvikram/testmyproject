@@ -1,0 +1,55 @@
+<nav class='navbar navbar-expand-lg navbar-light bg-light' id='template-ivyb'>
+<div id='template-iy0i'>
+<a class='navbar-brand' id='template-idgwv'>
+<img class='gep-logo' src='assets/img/iconfinder_IBM_104834.png' id='template-i1j5p'>
+</a>
+</div>
+<div class='navbar-collapse' id='navbarNav'>
+<ul class='navbar-nav' id='template-i6zkf'>
+<li class='nav-item' id='template-ipr12'>
+<a class='nav-link' id='template-ig9nh'>Products</a>
+</li>
+<li class='nav-item' id='template-ix0al'>
+<a class='nav-link' id='template-iqurk'>Services</a>
+</li>
+<li class='nav-item' id='template-iya8f'>
+<a class='nav-link' id='template-ijr7v'>Industries</a>
+</li>
+<li class='nav-item' id='template-iahyw'>
+<a class='nav-link' id='template-i6pyh'>Developers</a>
+</li>
+<li class='nav-item' id='template-ibadm'>
+<a class='nav-link' id='template-iuuas'>Support</a>
+</li>
+<li class='nav-item' id='template-iayvl'>
+<a class='nav-link' id='template-ijguk'>Careers</a>
+</li>
+</ul>
+<form class='form-inline gep-searchbar'>
+<div class='form-control' placeholder='Search' id='template-iykgf'>
+</div>
+<div class='gep-input-group-append' id='template-i6gpt'>
+<button class='btn btn-secondary' type='button' id='template-i3h47'>
+<i class='fa fa-search' id='template-i1u1v'></i>
+</button>
+</div>
+</form>
+<div class='mobileicon' id='template-igo2a'>
+<i class='fa fa-user fa-2x' id='template-icfh4'></i>
+</div>
+</div>
+</nav>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'top': '100px','display': confirmLangChangeModal}">
+  <div class="modal-dialog modal-sm" role="dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>language change cause you to re-login</p>
+      </div>
+      <div class="modal-footer" style="padding: 5px">
+        <button type="button" (click)="confirmLangChange()" class="btn btn-default">Confirm</button>
+        <button type="button" (click)="onCloseHandled()" class="btn btn-default">Cancel</button>
+      </div>
+    </div>
+
+  </div>
+</div>
